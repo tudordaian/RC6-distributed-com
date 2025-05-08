@@ -1,6 +1,5 @@
 BLOCK_SIZE = 16
 
-
 class RC6:
     def __init__(self, key: bytes, w=32, r=20):
         """
@@ -165,14 +164,3 @@ class RC6:
             result.extend(decrypted_block)
 
         return self.unpad(result)
-
-
-key = b"super secret key"
-rc6 = RC6(key)
-
-
-plaintext = b"mesaj lung de lungime foarte mareeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
-ciphertext = rc6.encrypt(plaintext)
-decrypted = rc6.decrypt(ciphertext).decode('utf-8')
-
-print(decrypted)
