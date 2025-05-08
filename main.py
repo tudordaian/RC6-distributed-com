@@ -6,8 +6,8 @@ from Server import Server
 
 # ruleaza ifconfig
 # server_ip = '192.168.1.135' # wifi acasa
-SERVER_IP = '172.20.10.3' # hotspot
-# SERVER_IP = '0.0.0.0'
+# SERVER_IP = '172.20.10.3' # hotspot
+SERVER_IP = '0.0.0.0'
 
 async def run_server():
     server = Server()

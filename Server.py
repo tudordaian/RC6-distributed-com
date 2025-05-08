@@ -21,7 +21,7 @@ class Server:
         active_transfer = None
 
         try:
-            _, public_key = self.dh.get_parameters_and_public_key()
+            public_key = self.dh.get_parameters_and_public_key()
 
             # trimite parametrii DH si cheie publica catre client
             await websocket.send(json.dumps({
