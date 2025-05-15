@@ -14,7 +14,6 @@ async def run_server():
     await server.start_server()
 
 
-
 async def run_client(server_ip='localhost'):
     client = Client(uri=f'ws://{server_ip}:8765')
     await client.connect()

@@ -1,12 +1,11 @@
-import asyncio
 import base64
 import json
 import os
 
 import websockets
 
-from RC6 import RC6
 from DHKeyExchange import DHKeyExchange
+from RC6 import RC6
 
 
 class Client:
